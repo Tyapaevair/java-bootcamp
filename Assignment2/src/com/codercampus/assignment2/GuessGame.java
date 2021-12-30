@@ -9,16 +9,11 @@ public class GuessGame {
 
         Random theRandomNumber = new Random();
         int r = theRandomNumber.nextInt(100);
-        System.out.println("Random number is " + r);
 
         Scanner userInput = new Scanner(System.in);
         System.out.println("Pick a number between 1 and 100");
         String number = userInput.next();
         int n = Integer.parseInt(number);
-        if (r == n) {
-            System.out.println("You win!");
-        }
-
 
         int i = 1;
 
