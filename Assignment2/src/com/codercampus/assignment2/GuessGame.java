@@ -20,19 +20,19 @@ public class GuessGame {
         while (i < 5 && r != n){
 
 
-                if (n < r && n >= 0 && n <= 100) {
+                if (n < r && n > 0 && n <= 100) {
                     System.out.println("Please pick a higher number");
                     String newNumber = userInput.next();
                     n = Integer.parseInt(newNumber);
                 i = i + 1;
 
-                } else if (n > r && n >= 0 && n <= 100) {
+                } else if (n > r && n > 0 && n <= 100) {
                     System.out.println("Please pick a lower number");
                     String newNumber = userInput.next();
                     n = Integer.parseInt(newNumber);
                 i = i + 1;
 
-                } else if (n < 0 || n > 100){
+                } else if (n <= 0 || n > 100){
                     System.out.println("Your guess is not between 1 and 100, please try again");
                     String newNumber = userInput.next();
                     n = Integer.parseInt(newNumber);
